@@ -1,5 +1,7 @@
 <?php
 
+use App\Models\Publisher;
+use App\Models\Resource;
 use Illuminate\Support\Facades\Route;
 
 /*

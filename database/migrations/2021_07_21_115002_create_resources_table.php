@@ -19,9 +19,11 @@ class CreateResourcesTable extends Migration
             $table->smallInteger('issue_year');
             $table->unsignedBigInteger('publisher_id')->nullable();
             $table->unsignedBigInteger('contributor_id')->nullable();
+            $table->unsignedBigInteger('course_id')->nullable();
+            $table->string('url', 500)->nullable();
+            $table->string('type', 50)->nullable();
             $table->timestamps();
         });
-
     }
 
 

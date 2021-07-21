@@ -26,6 +26,9 @@ class ResourceFactory extends Factory
             'issue_year' => $this->faker->year($max = 'now'),
             'publisher_id' => \App\Models\Publisher::inRandomOrder()->first(),
             'contributor_id' => \App\Models\Contributor::inRandomOrder()->first(),
+            'course_id' => \App\Models\Course::inRandomOrder()->first(),
+            'url' => \App\Models\Course::inRandomOrder()->first(),
+            'type' => \App\Models\Course::inRandomOrder()->first(),
         ];
     }
 }

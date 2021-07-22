@@ -3,6 +3,8 @@
 use App\Models\Publisher;
 use App\Models\Resource;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\DB;
+use Spatie\Searchable\Search;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,5 +18,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
+    $results = DB::table('resources')
+
+    ->get();
     return view('home');
-});
+})->name('home');
